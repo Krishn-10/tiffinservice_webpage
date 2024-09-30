@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiffin Service - Menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <script src="menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="profile-section">
+            <img src="https://media.istockphoto.com/id/2105399620/photo/smiling-businessman-using-laptop-in-modern-office.webp?s=1024x1024&w=is&k=20&c=-atu1b-k1YZjOziSrpGeY6riK3GHU523W6fILzHXm58=" alt="User Profile" class="profile-pic">
+            <h2>Welcome, Foody</h2>
+            <p>Email: krishna@gmail.com</p>
+        </div>
+    </header>
+
+    <section class="menu-container">
+        <h1>Tiffin Service Menu</h1>
+
+        <div class="menus">
+            <div class="menu-item">
+                <img src="vegthali.jpg" alt="Dish 1">
+                <h3>Vegetarian Thali</h3>
+                <p>Price: ₹150</p>
+                <p>Rating: ★★★★☆</p>
+                <button class="add-to-cart" data-name="Vegetarian Thali" data-price="150">Add to Cart</button>
+                <button class="view-reviews" data-name="Vegetarian Thali">View Reviews</button>
+            </div>
+    
+            <div class="menu-item">
+                <img src="paneerbhurji.png" alt="Dish 2">
+                <h3>Paneer Bhurji
+                </h3>
+                <p>Price: ₹100</p>
+                <p>Rating: ★★★★★</p>
+                <button class="add-to-cart" data-name="Chicken Biryani" data-price="200">Add to Cart</button>
+                <button class="view-reviews" data-name="Chicken Biryani">View Reviews</button>
+            </div>
+    
+            <div class="menu-item">
+                <img src="https://media.istockphoto.com/id/912624962/photo/tomato-and-feta-pasta-salad-with-freshly-chopped-basil.webp?s=1024x1024&w=is&k=20&c=bao-47y3Xzj_oWUdHevrrXWH14TsqontakprKO1b45k=" alt="Dish 3">
+                <h3>Pasta Salad</h3>
+                <p>Price: ₹100</p>
+                <p>Rating: ★★★☆☆</p>
+                <button class="add-to-cart" data-name="Pasta Salad" data-price="100">Add to Cart</button>
+                <button class="view-reviews" data-name="Pasta Salad">View Reviews</button>
+            </div>
+    
+            <div class="menu-item">
+                <img src="https://media.istockphoto.com/id/1325272041/photo/green-peas-or-matar-paneer-curry.webp?s=1024x1024&w=is&k=20&c=apSnmXeNDi0krfpzC9wv1QucZGVBPdOSN1qY6-vGfYs=" alt="Dish 4">
+                <h3>Paneer Butter Masala</h3>
+                <p>Price: ₹180</p>
+                <p>Rating: ★★★★☆</p>
+                <button class="add-to-cart" data-name="Paneer Butter Masala" data-price="180">Add to Cart</button>
+                <button class="view-reviews" data-name="Paneer Butter Masala">View Reviews</button>
+            </div>
+    
+            <div class="menu-item">
+                <img src="eggrice.jpeg" alt="Dish 5">
+                <h3>Egg Rice</h3>
+                <p>Price: ₹120</p>
+                <p>Rating: ★★★★☆</p>
+                <button class="add-to-cart" data-name="Egg Curry" data-price="120">Add to Cart</button>
+                <button class="view-reviews" data-name="Egg Curry">View Reviews</button>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cartItems"></ul>
+        <p>Total: ₹<span id="cartTotal">0</span></p>
+        <button id="checkoutBtn" class="btn">Checkout</button>
+    </section>
+
+    <section class="feedback">
+        <h2>Leave Your Feedback</h2>
+        <form id="feedbackForm">
+            <div class="form-group">
+                <label for="dish">Select Dish:</label>
+                <select id="dish" required>
+                    <option value="Vegetarian Thali">Vegetarian Thali</option>
+                    <option value="Chicken Biryani">Paneer Bhurji</option>
+                    <option value="Pasta Salad">Pasta Salad</option>
+                    <option value="Paneer Butter Masala">Paneer Butter Masala</option>
+                    <option value="Egg Curry">Egg Rice</option>
+                    <option value="Fish Fry">Fish Fry</option>
+                    <option value="Dal Tadka">Dal Tadka</option>
+                    <option value="Mutton Curry">Mutton Curry</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating:</label>
+                <input type="number" id="rating" min="1" max="5" placeholder="Rate 1-5" required>
+            </div>
+            <div class="form-group">
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" placeholder="Write your feedback" required></textarea>
+            </div>
+            <button type="submit" class="btn">Submit Feedback</button>
+        </form>
+    </section>
+
+    <script src="menu.js"></script>
+</body>
+</html>
